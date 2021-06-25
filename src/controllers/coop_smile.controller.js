@@ -6,7 +6,7 @@ const moment = require("moment");
 module.exports = {
   getList: async function (req, res, next) {
     let data = await coop_smile.findByLambda();
-    res.json(resSuccess({ data: data }));
+    res.json(resSuccess(data));
   },
 
   findById: async function (req, res) {

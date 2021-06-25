@@ -15,6 +15,7 @@ const tikiBookRoutes = require("./routes/tiki_book.router");
 const bhxRoutes = require("./routes/bhx.router");
 const lavieRoutes = require("./routes/lavie.router");
 const tigerRoutes = require("./routes/tiger.router");
+const productRoutes = require("./routes/product.router");
 
 app.use(bodyParser.json());
 // app.use(
@@ -37,6 +38,7 @@ app.use("/tiki_book", tikiBookRoutes);
 app.use("/bhx", bhxRoutes);
 app.use("/lavie", lavieRoutes);
 app.use("/tiger", tigerRoutes);
+app.use("/product", productRoutes);
 
 
 const DB = require("./db");
